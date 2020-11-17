@@ -33,7 +33,7 @@
     width: auto;
 }
 
-.img1 {
+.img1, .img2 {
     width: 350px;
     height: 350px;
     margin: 32px 24px;
