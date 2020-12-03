@@ -15,10 +15,34 @@ body {
     display: none;
 }
 
+h1, h2, h3 {
+    color: #303030;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
 a {
     text-decoration: none;
 }
 
+main {
+    position: relative;
+    top: 4rem;
+    border: 1px solid #d8d8d8;
+}
 
 /* --------- HEADER --------- */
 
@@ -78,7 +102,45 @@ ul li a {
     line-height: 1.5rem;
 }
 
+/* ------ BANNER ------- */
+#banner {
+    display: flex;
+    background-color: #d8d8d8;
+}
 
+.banner img {
+    width: 100%;
+}
+
+.side-banner {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: auto 12px;
+    padding: 4rem 1.5rem;
+}
+
+.side-banner h1 {
+    margin-bottom: 32px;
+}
+
+.side-banner h3 {
+    margin-bottom: 24px;
+}
+
+button {
+    border: none;
+    margin: 0 auto;
+    padding: 0.5rem 7rem;
+    background-color: #4a4a4a;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
 
 /*body {
     background-color: #dedcd8;
