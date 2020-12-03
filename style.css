@@ -142,6 +142,54 @@ button a {
     font-size: 1.2rem;
 }
 
+/* -------- INFO ------- */
+
+#info {
+    width: 100%;
+    display: flex;
+}
+
+#info .left img {
+    width: 98%;
+    margin-bottom: 32px;
+}
+
+.info h2, .info p {
+    margin-bottom: 24px;
+}
+
+.img-info-title {
+    padding-right: 10px;
+}
+
+.side-info {
+    padding: 16px 0 32px 0;
+    border-left: 1px solid #d8d8d8;
+}
+
+.side-info img, .thesis-right-box img {
+    width: 35%;
+    height: auto;
+    margin-right: 16px;
+}
+
+#orientation, #campus, #lecture {
+    display: flex;
+    padding: 16px;
+}
+
+#orientation {
+    border-bottom: 4px double #d8d8d8;
+}
+
+#lecture {
+    background: #d8d8d8;
+}
+
+.aside h3, .aside p {
+    margin-bottom: 8px;
+}
+
 /*body {
     background-color: #dedcd8;
 }
