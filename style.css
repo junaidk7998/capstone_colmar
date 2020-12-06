@@ -226,3 +226,51 @@ button a {
     text-align: start;
     margin: 16px auto 32px 16px;
 }
+
+.courses-description h3, .courses-description p {
+    margin-bottom: 8px;
+}
+
+/* ----- THESIS ------*/
+
+#thesis {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+#thesis h2 {
+    margin: 32px auto;
+}
+
+.thesis-info {
+    display: flex;
+}
+
+#thesis .left {
+    padding: 0 24px;
+}
+
+.thesis-left-box video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+}
+
+.thesis-left-box h3 {
+    margin-bottom: 8px;
+}
+
+#fisma, #now-and-then {
+    display: flex;
+    padding: 16px;
+}
+
+.aside-thesis-text {
+    margin: auto 0;
+}
+
+#fisma {
+    background-color: #d8d8d8;
+}
