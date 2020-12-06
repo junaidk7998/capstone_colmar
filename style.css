@@ -9,6 +9,7 @@
 body {
     font-size: 16px;
     letter-spacing: 0.5px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .mobile {
@@ -44,6 +45,27 @@ main {
     border: 1px solid #d8d8d8;
 }
 
+p {
+    color: #9b9b9b;
+    font-weight: 300;
+}
+
+.left {
+    width: 60%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 32px 12px 32px 24px;
+}
+
+.right {
+    width: 40%;
+}
+
+cite {
+    font-size: 0.8rem;
+    color: #9b9b9b;
+}
+
 /* --------- HEADER --------- */
 
 .header {
@@ -54,6 +76,7 @@ main {
 
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 10;
@@ -66,6 +89,7 @@ header {
 
 .logo {
     display: flex;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
 }
@@ -147,6 +171,8 @@ button a {
 #info {
     width: 100%;
     display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 #info .left img {
@@ -184,6 +210,10 @@ button a {
 
 #lecture {
     background: #d8d8d8;
+}
+
+.aside {
+    margin: auto;
 }
 
 .aside h3, .aside p {
@@ -273,4 +303,146 @@ button a {
 
 #fisma {
     background-color: #d8d8d8;
+}
+
+/* ---- FOOTER ----*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+
+.footer-nav a {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* ------ MEDIA QUERIES ------- */
+
+@media only screen and (max-width: 800px) {
+    .desktop {
+        display: none;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* --- HEADER --- */
+
+    .logo-mobile img {
+        height: 35px;
+        width: 35px;
+    }
+
+    #navbar-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* --- BANNER --- */
+
+    #banner {
+        flex-wrap:
+    }
+
+    .banner {
+        padding: 0;
+    }
+
+    .side-banner {
+        padding: 32px 16px;
+    }
+
+    button {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    /* --- INFO --- */
+
+    .side-info {
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding-bottom: 0;
+    }
+
+    .aside {
+        margin-left: 16px;
+        margin-bottom: 32px;
+    }
+    #orientation, #campus, #lecture {
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .mobile-info-img-box img {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 32px;
+    }
+
+    #orientation {
+        border-bottom: none;
+    }
+
+    #lecture {
+        background: none;
+    }
+
+    /* --- COURSES --- */
+
+    #courses {
+        border-top: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
+        background-color: #fff;
+        padding: 32px 15px;
+    }
+
+    .courses-selection {
+        margin-top: 16px;
+    }
+
+    .mobile-courses-h3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-courses-selection {
+        text-align: left;
+        background-color: #d8d8d8;
+        margin: 0.5rem 0;
+    }
+
+    .mobile-courses-h3 h3 {
+        margin: 16px auto 24px 16px;
+        font-weight: 400;
+    }
+
+    .mobile-courses-h3 a {
+        color: #303030;
+    }
+
+    /* --- THESIS --- */
+
+    #thesis {
+        border-bottom: none;
+        padding-bottom: 8px;
+    }
+
+    #thesis h2 {
+        margin-bottom: 16px;
+    }
+
+    #thesis .left {
+        padding: 0;
+    }
 }
